@@ -1,0 +1,54 @@
+{
+    "mappings": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "first_name": {
+          "type": "text"
+        },
+        "last_name": {
+          "type": "text"
+        },
+        "gender": {
+          "type": "keyword"
+        },
+        "address": {
+          "type": "text"
+        },
+        "post_code": {
+          "type": "keyword"
+        },
+        "email": {
+          "type": "keyword"
+        },
+        "username": {
+          "type": "keyword"
+        },
+        "dob": {
+          "type": "date",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'||epoch_millis"
+        },
+        "age": {
+          "type": "integer"
+        },
+        "registered_date": {
+          "type": "date",
+          "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'||epoch_millis"
+        },
+        "phone": {
+          "type": "keyword"
+        },
+        "cell": {
+          "type": "keyword"
+        },
+        "picture": {
+          "type": "text"
+        },
+        "nationality": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+  

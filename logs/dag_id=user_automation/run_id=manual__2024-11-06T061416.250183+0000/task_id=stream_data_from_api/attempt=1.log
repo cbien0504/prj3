@@ -1,0 +1,79 @@
+[2024-11-06T06:14:17.455+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api manual__2024-11-06T06:14:16.250183+00:00 [queued]>
+[2024-11-06T06:14:17.472+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api manual__2024-11-06T06:14:16.250183+00:00 [queued]>
+[2024-11-06T06:14:17.473+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-11-06T06:14:17.494+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): stream_data_from_api> on 2024-11-06 06:14:16.250183+00:00
+[2024-11-06T06:14:17.502+0000] {standard_task_runner.py:60} INFO - Started process 160 to run task
+[2024-11-06T06:14:17.506+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'user_automation', 'stream_data_from_api', 'manual__2024-11-06T06:14:16.250183+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmp3ehr8159']
+[2024-11-06T06:14:17.509+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask stream_data_from_api
+[2024-11-06T06:14:17.579+0000] {task_command.py:423} INFO - Running <TaskInstance: user_automation.stream_data_from_api manual__2024-11-06T06:14:16.250183+00:00 [running]> on host 40a6e359d100
+[2024-11-06T06:14:17.665+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airscholar' AIRFLOW_CTX_DAG_ID='user_automation' AIRFLOW_CTX_TASK_ID='stream_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2024-11-06T06:14:16.250183+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-06T06:14:16.250183+00:00'
+[2024-11-06T06:14:17.762+0000] {conn.py:380} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.11', 29092)]>: connecting to broker:29092 [('172.18.0.11', 29092) IPv4]
+[2024-11-06T06:14:17.763+0000] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2024-11-06T06:14:17.764+0000] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.11', 29092)]>: Connection complete.
+[2024-11-06T06:14:17.873+0000] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2024-11-06T06:14:17.875+0000] {conn.py:1268} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2024-11-06T06:14:18.430+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:18.433+0000] {conn.py:380} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.11', 29092)]>: connecting to broker:29092 [('172.18.0.11', 29092) IPv4]
+[2024-11-06T06:14:18.434+0000] {conn.py:410} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.11', 29092)]>: Connection complete.
+[2024-11-06T06:14:18.436+0000] {conn.py:919} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connected> [IPv4 ('172.18.0.11', 29092)]>: Closing connection. 
+[2024-11-06T06:14:18.896+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:19.454+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:19.963+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:20.486+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:20.987+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:21.499+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:22.012+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:22.444+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:23.034+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:23.458+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:24.366+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:24.850+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:25.394+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:25.902+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:26.527+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:27.028+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:27.440+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:27.951+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:28.360+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:28.872+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:29.498+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:30.103+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:30.614+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:31.126+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:31.642+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:32.049+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:32.562+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:33.071+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:33.585+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:34.508+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:35.017+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:35.531+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:36.542+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:37.068+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:37.917+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:38.399+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:38.910+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:39.373+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:39.831+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:40.344+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:40.976+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:41.472+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:41.980+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:42.492+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:42.967+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:43.414+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:43.929+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:44.441+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:44.896+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:45.328+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:45.768+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:46.285+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:46.796+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:47.222+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:47.674+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:48.225+0000] {logging_mixin.py:188} INFO - oke
+[2024-11-06T06:14:48.228+0000] {conn.py:919} INFO - <BrokerConnection node_id=1 host=broker:29092 <connected> [IPv4 ('172.18.0.11', 29092)]>: Closing connection. 
+[2024-11-06T06:14:48.229+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-11-06T06:14:48.244+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=user_automation, task_id=stream_data_from_api, execution_date=20241106T061416, start_date=20241106T061417, end_date=20241106T061448
+[2024-11-06T06:14:48.306+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-11-06T06:14:48.324+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

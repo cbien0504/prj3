@@ -1,0 +1,185 @@
+[2024-12-21T06:39:07.266+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api manual__2024-12-21T06:39:06.163223+00:00 [queued]>
+[2024-12-21T06:39:07.279+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api manual__2024-12-21T06:39:06.163223+00:00 [queued]>
+[2024-12-21T06:39:07.280+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-12-21T06:39:07.292+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): stream_data_from_api> on 2024-12-21 06:39:06.163223+00:00
+[2024-12-21T06:39:07.298+0000] {standard_task_runner.py:60} INFO - Started process 682 to run task
+[2024-12-21T06:39:07.300+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'user_automation', 'stream_data_from_api', 'manual__2024-12-21T06:39:06.163223+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/kafka_streaming.py', '--cfg-path', '/tmp/tmpbq76ddml']
+[2024-12-21T06:39:07.301+0000] {standard_task_runner.py:88} INFO - Job 36: Subtask stream_data_from_api
+[2024-12-21T06:39:07.342+0000] {task_command.py:423} INFO - Running <TaskInstance: user_automation.stream_data_from_api manual__2024-12-21T06:39:06.163223+00:00 [running]> on host f6efe59a6eda
+[2024-12-21T06:39:07.411+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airscholar' AIRFLOW_CTX_DAG_ID='user_automation' AIRFLOW_CTX_TASK_ID='stream_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2024-12-21T06:39:06.163223+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-21T06:39:06.163223+00:00'
+[2024-12-21T06:39:07.488+0000] {conn.py:380} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.13', 29092)]>: connecting to broker:29092 [('172.18.0.13', 29092) IPv4]
+[2024-12-21T06:39:07.489+0000] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2024-12-21T06:39:07.490+0000] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.18.0.13', 29092)]>: Connection complete.
+[2024-12-21T06:39:07.595+0000] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2024-12-21T06:39:07.596+0000] {conn.py:1268} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2024-12-21T06:39:07.961+0000] {logging_mixin.py:188} INFO - {'id': 'f28d3778-2e28-4331-99c6-9172404aef20', 'first_name': 'Cord', 'last_name': 'Teske', 'gender': 'male', 'address': '1348 Schützenstraße, Königsee-Rottenbach, Saarland, Germany', 'post_code': 49670, 'email': 'cord.teske@example.com', 'username': 'brownkoala412', 'dob': '1949-11-25T17:20:03.036Z', 'registered_date': '2013-08-31T00:48:28.077Z', 'phone': '0256-9153904', 'picture': 'https://randomuser.me/api/portraits/med/men/82.jpg'}
+[2024-12-21T06:39:07.962+0000] {conn.py:380} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.13', 29092)]>: connecting to broker:29092 [('172.18.0.13', 29092) IPv4]
+[2024-12-21T06:39:07.965+0000] {conn.py:410} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.13', 29092)]>: Connection complete.
+[2024-12-21T06:39:07.966+0000] {conn.py:919} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connected> [IPv4 ('172.18.0.13', 29092)]>: Closing connection. 
+[2024-12-21T06:39:08.316+0000] {logging_mixin.py:188} INFO - {'id': '2823e8bd-f445-4ba9-8b22-916fc49eaae3', 'first_name': 'Edwin', 'last_name': 'Cook', 'gender': 'male', 'address': '1441 Oaks Cross, Westminster, Lincolnshire, United Kingdom', 'post_code': 'G96 3EF', 'email': 'edwin.cook@example.com', 'username': 'crazymeercat893', 'dob': '1982-04-23T20:28:45.246Z', 'registered_date': '2016-05-09T08:47:42.221Z', 'phone': '016973 49587', 'picture': 'https://randomuser.me/api/portraits/med/men/33.jpg'}
+[2024-12-21T06:39:08.676+0000] {logging_mixin.py:188} INFO - {'id': '84d112a5-ad58-4f4c-8f2f-b6d958470932', 'first_name': 'Gaetano', 'last_name': 'Meyer', 'gender': 'male', 'address': '865 Place de la Mairie, Dällikon, Vaud, Switzerland', 'post_code': 9054, 'email': 'gaetano.meyer@example.com', 'username': 'greenduck984', 'dob': '1991-12-18T12:21:24.711Z', 'registered_date': '2016-05-26T07:06:19.444Z', 'phone': '078 314 19 18', 'picture': 'https://randomuser.me/api/portraits/med/men/10.jpg'}
+[2024-12-21T06:39:09.107+0000] {logging_mixin.py:188} INFO - {'id': 'ecc8c9cb-8132-4622-958a-01470176fd23', 'first_name': 'Freja', 'last_name': 'Møller', 'gender': 'female', 'address': '2818 Feriebyen, Billum, Midtjylland, Denmark', 'post_code': 82067, 'email': 'freja.moller@example.com', 'username': 'greenbutterfly950', 'dob': '1947-01-20T01:20:37.343Z', 'registered_date': '2005-11-16T17:52:36.200Z', 'phone': '12820535', 'picture': 'https://randomuser.me/api/portraits/med/women/90.jpg'}
+[2024-12-21T06:39:09.467+0000] {logging_mixin.py:188} INFO - {'id': '414bd63b-f5a0-4e8f-bc01-a5bc2d8af302', 'first_name': 'Ibrahim', 'last_name': 'Berstad', 'gender': 'male', 'address': '107 Tryms vei, Lunner, Vestfold, Norway', 'post_code': '3249', 'email': 'ibrahim.berstad@example.com', 'username': 'crazygoose300', 'dob': '1967-01-04T15:44:14.156Z', 'registered_date': '2017-11-09T09:06:38.172Z', 'phone': '50557839', 'picture': 'https://randomuser.me/api/portraits/med/men/48.jpg'}
+[2024-12-21T06:39:09.810+0000] {logging_mixin.py:188} INFO - {'id': '671fb351-d857-4705-a360-4d8b400ce820', 'first_name': 'Jaxon', 'last_name': 'Green', 'gender': 'male', 'address': "3163 Karamu Road, Whanganui, Hawke'S Bay, New Zealand", 'post_code': 69842, 'email': 'jaxon.green@example.com', 'username': 'greenleopard815', 'dob': '1980-05-27T19:05:22.469Z', 'registered_date': '2002-11-10T03:54:13.593Z', 'phone': '(965)-859-5557', 'picture': 'https://randomuser.me/api/portraits/med/men/79.jpg'}
+[2024-12-21T06:39:26.613+0000] {logging_mixin.py:188} INFO - {'id': '4841d6b9-998d-4890-8df6-bc629fd426d8', 'first_name': 'Othilie', 'last_name': 'Skjærvik', 'gender': 'female', 'address': '7014 Ødegårdsveien, Storsand, Møre og Romsdal, Norway', 'post_code': '9714', 'email': 'othilie.skjaervik@example.com', 'username': 'heavyelephant838', 'dob': '1951-01-14T13:02:18.597Z', 'registered_date': '2002-12-07T09:46:35.861Z', 'phone': '71280724', 'picture': 'https://randomuser.me/api/portraits/med/women/52.jpg'}
+[2024-12-21T06:39:10.568+0000] {logging_mixin.py:188} INFO - {'id': '9b0245ae-0cfa-4e2e-965d-dc9a4f836cff', 'first_name': 'Kupava', 'last_name': 'Kulzhinskiy', 'gender': 'female', 'address': '556 Tiha, Rozhishche, Mikolayivska, Ukraine', 'post_code': 34951, 'email': 'kupava.kulzhinskiy@example.com', 'username': 'crazyladybug206', 'dob': '1963-04-27T12:14:43.168Z', 'registered_date': '2014-01-08T11:58:11.337Z', 'phone': '(098) Y59-7790', 'picture': 'https://randomuser.me/api/portraits/med/women/58.jpg'}
+[2024-12-21T06:39:10.950+0000] {logging_mixin.py:188} INFO - {'id': 'e7773e2f-e5fe-471e-bb0b-d042510e1c30', 'first_name': 'Nella', 'last_name': 'Kilpela', 'gender': 'female', 'address': '9241 Myllypuronkatu, Pieksämäki, Central Ostrobothnia, Finland', 'post_code': 67332, 'email': 'nella.kilpela@example.com', 'username': 'redpanda791', 'dob': '1974-02-17T20:08:37.033Z', 'registered_date': '2015-08-06T03:47:59.137Z', 'phone': '07-668-158', 'picture': 'https://randomuser.me/api/portraits/med/women/61.jpg'}
+[2024-12-21T06:39:11.327+0000] {logging_mixin.py:188} INFO - {'id': '71355f07-a4e5-47c5-b5bf-5e46c9b67067', 'first_name': 'Guro', 'last_name': 'Aaslund', 'gender': 'female', 'address': '9116 Egedes gate, Kvam, Sogn og Fjordane, Norway', 'post_code': '7466', 'email': 'guro.aaslund@example.com', 'username': 'orangerabbit347', 'dob': '1962-08-17T01:18:04.229Z', 'registered_date': '2014-08-07T04:41:27.569Z', 'phone': '33344262', 'picture': 'https://randomuser.me/api/portraits/med/women/96.jpg'}
+[2024-12-21T06:39:11.736+0000] {logging_mixin.py:188} INFO - {'id': '84995373-675c-4707-8f3a-bda574764c1c', 'first_name': 'Caleb', 'last_name': 'Weaver', 'gender': 'male', 'address': '3433 St. John’S Road, Wakefield, Lancashire, United Kingdom', 'post_code': 'U4Z 4YG', 'email': 'caleb.weaver@example.com', 'username': 'happyladybug525', 'dob': '1953-05-12T10:34:29.752Z', 'registered_date': '2011-09-27T11:10:59.913Z', 'phone': '017684 60150', 'picture': 'https://randomuser.me/api/portraits/med/men/1.jpg'}
+[2024-12-21T06:39:12.099+0000] {logging_mixin.py:188} INFO - {'id': '37100b06-31b6-47d2-9415-cca9c56cf6ec', 'first_name': 'Rick', 'last_name': 'Kim', 'gender': 'male', 'address': '8324 Albert Road, Worcester, Isle of Wight, United Kingdom', 'post_code': 'Y81 9GG', 'email': 'rick.kim@example.com', 'username': 'bluebear306', 'dob': '1948-06-28T14:25:43.848Z', 'registered_date': '2012-02-18T21:49:13.599Z', 'phone': '021 3808 8635', 'picture': 'https://randomuser.me/api/portraits/med/men/18.jpg'}
+[2024-12-21T06:39:12.474+0000] {logging_mixin.py:188} INFO - {'id': 'c9b6ed4d-b5fc-4bca-96db-a355032888f6', 'first_name': 'Joseph', 'last_name': 'Saniel', 'gender': 'male', 'address': '4525 Gali Paranthe Wali, Parbhani, Gujarat, India', 'post_code': 82282, 'email': 'joseph.saniel@example.com', 'username': 'greenbird227', 'dob': '1974-03-13T10:12:48.053Z', 'registered_date': '2003-04-27T15:41:01.422Z', 'phone': '9517797557', 'picture': 'https://randomuser.me/api/portraits/med/men/74.jpg'}
+[2024-12-21T06:39:12.909+0000] {logging_mixin.py:188} INFO - {'id': '2a432f73-fb09-40b4-a88e-e2b62a5e8fc4', 'first_name': 'Romek', 'last_name': 'De Best', 'gender': 'male', 'address': '9610 Huijgevoort, Oosterbeek, Zuid-Holland, Netherlands', 'post_code': '1778 HX', 'email': 'romek.debest@example.com', 'username': 'heavylion959', 'dob': '1967-06-15T18:31:29.133Z', 'registered_date': '2006-05-18T06:23:54.546Z', 'phone': '(051) 1518465', 'picture': 'https://randomuser.me/api/portraits/med/men/79.jpg'}
+[2024-12-21T06:39:13.285+0000] {logging_mixin.py:188} INFO - {'id': '30f470d3-31a6-4857-81e2-1b3184002457', 'first_name': 'Tanja', 'last_name': 'Silić', 'gender': 'female', 'address': '2519 Panajota Papakostopulosa , Vrbas, Pirot, Serbia', 'post_code': 80987, 'email': 'tanja.silic@example.com', 'username': 'yellowleopard108', 'dob': '1950-10-14T23:03:45.208Z', 'registered_date': '2006-09-02T07:14:23.824Z', 'phone': '022-3090-302', 'picture': 'https://randomuser.me/api/portraits/med/women/20.jpg'}
+[2024-12-21T06:39:13.692+0000] {logging_mixin.py:188} INFO - {'id': '4365150a-24ce-4c74-8dd3-d375c76e6f83', 'first_name': 'Amine', 'last_name': 'Takvam', 'gender': 'female', 'address': '1604 Parkveien, Oddevall, Hordaland, Norway', 'post_code': '3713', 'email': 'amine.takvam@example.com', 'username': 'purplegorilla249', 'dob': '1959-04-09T03:44:54.929Z', 'registered_date': '2011-05-07T21:53:17.253Z', 'phone': '60973929', 'picture': 'https://randomuser.me/api/portraits/med/women/77.jpg'}
+[2024-12-21T06:39:14.066+0000] {logging_mixin.py:188} INFO - {'id': 'f7a64e51-5763-472c-9929-f462c0ae9d88', 'first_name': 'Lyubim', 'last_name': 'Luchickiy', 'gender': 'male', 'address': '6886 Generala Koroteieva, Kostopil, Sumska, Ukraine', 'post_code': 25172, 'email': 'lyubim.luchickiy@example.com', 'username': 'orangefish604', 'dob': '1996-11-20T13:21:21.256Z', 'registered_date': '2005-06-24T08:03:15.498Z', 'phone': '(067) G86-5288', 'picture': 'https://randomuser.me/api/portraits/med/men/77.jpg'}
+[2024-12-21T06:39:14.449+0000] {logging_mixin.py:188} INFO - {'id': '4ec790b5-4754-47b5-8960-c9d90e6ab62e', 'first_name': 'Calvin', 'last_name': 'Harris', 'gender': 'male', 'address': '6802 Pockrus Page Rd, Townsville, New South Wales, Australia', 'post_code': 7050, 'email': 'calvin.harris@example.com', 'username': 'greenbutterfly730', 'dob': '1997-07-08T15:58:47.972Z', 'registered_date': '2017-10-24T05:18:50.789Z', 'phone': '08-7487-2799', 'picture': 'https://randomuser.me/api/portraits/med/men/11.jpg'}
+[2024-12-21T06:39:31.441+0000] {logging_mixin.py:188} INFO - {'id': 'a07fc330-2bba-40dd-8fe8-b349c428bd4a', 'first_name': 'Jie', 'last_name': 'Ploum', 'gender': 'female', 'address': '4525 Goudriaan, Klarenbeek, Flevoland, Netherlands', 'post_code': '7855 YS', 'email': 'jie.ploum@example.com', 'username': 'heavyrabbit897', 'dob': '1959-03-30T04:48:01.058Z', 'registered_date': '2003-12-19T16:53:15.316Z', 'phone': '(0762) 138109', 'picture': 'https://randomuser.me/api/portraits/med/women/71.jpg'}
+[2024-12-21T06:39:15.423+0000] {logging_mixin.py:188} INFO - {'id': 'dd45df6e-2a68-4cee-ad96-7d5a749698d7', 'first_name': 'Diaz', 'last_name': 'Van Walsem', 'gender': 'male', 'address': '2733 Bockenbergstraat, Dinxperlo, Zuid-Holland, Netherlands', 'post_code': '9472 IK', 'email': 'diaz.vanwalsem@example.com', 'username': 'bigostrich762', 'dob': '1993-01-13T11:45:05.540Z', 'registered_date': '2008-03-04T06:48:39.278Z', 'phone': '(0684) 812596', 'picture': 'https://randomuser.me/api/portraits/med/men/97.jpg'}
+[2024-12-21T06:39:15.811+0000] {logging_mixin.py:188} INFO - {'id': '45558cc3-92fd-4aba-adcf-b978d25e6cb5', 'first_name': 'Marceau', 'last_name': 'Michel', 'gender': 'male', 'address': '7961 Avenue Debrousse, Brest, Lozère, France', 'post_code': 86745, 'email': 'marceau.michel@example.com', 'username': 'greenkoala855', 'dob': '1953-07-14T11:36:16.800Z', 'registered_date': '2021-12-08T18:39:57.466Z', 'phone': '02-64-05-20-05', 'picture': 'https://randomuser.me/api/portraits/med/men/95.jpg'}
+[2024-12-21T06:39:16.220+0000] {logging_mixin.py:188} INFO - {'id': '84415f49-6210-45f2-9c13-efd264d90f6e', 'first_name': 'Louis', 'last_name': 'Roy', 'gender': 'male', 'address': '272 Place du 8 Février 1962, Lyon, Creuse, France', 'post_code': 68656, 'email': 'louis.roy@example.com', 'username': 'purpleswan156', 'dob': '1994-06-29T10:54:57.723Z', 'registered_date': '2011-03-30T08:28:02.609Z', 'phone': '01-28-66-10-64', 'picture': 'https://randomuser.me/api/portraits/med/men/68.jpg'}
+[2024-12-21T06:39:21.479+0000] {logging_mixin.py:188} INFO - {'id': '87a45526-c6e7-4e5f-bef6-8073003638b4', 'first_name': 'Art', 'last_name': 'Rodriquez', 'gender': 'male', 'address': '4496 Oaks Cross, Bangor, Rutland, United Kingdom', 'post_code': 'V0 4XP', 'email': 'art.rodriquez@example.com', 'username': 'smallelephant247', 'dob': '1958-07-20T14:55:40.182Z', 'registered_date': '2012-08-30T01:28:05.904Z', 'phone': '0117424 682 5591', 'picture': 'https://randomuser.me/api/portraits/med/men/35.jpg'}
+[2024-12-21T06:39:23.262+0000] {logging_mixin.py:188} INFO - {'id': 'a21b1d57-d64f-491a-9837-d2ed00fe8cd6', 'first_name': 'Fedir', 'last_name': 'Kosik', 'gender': 'male', 'address': '7358 Poloviy provulok, Bahmach, Zaporizka, Ukraine', 'post_code': 72649, 'email': 'fedir.kosik@example.com', 'username': 'crazypanda153', 'dob': '1965-10-20T07:39:03.392Z', 'registered_date': '2010-12-04T10:05:57.208Z', 'phone': '(096) U33-1698', 'picture': 'https://randomuser.me/api/portraits/med/men/14.jpg'}
+[2024-12-21T06:39:28.828+0000] {logging_mixin.py:188} INFO - {'id': 'c437de8f-62ec-4db6-b640-35e07a7f4d73', 'first_name': 'Helmi', 'last_name': 'Karjala', 'gender': 'female', 'address': '6282 Tahmelantie, Lappajärvi, Päijät-Häme, Finland', 'post_code': 41788, 'email': 'helmi.karjala@example.com', 'username': 'purplefrog621', 'dob': '1995-06-01T00:31:53.299Z', 'registered_date': '2008-09-15T11:52:35.596Z', 'phone': '02-735-874', 'picture': 'https://randomuser.me/api/portraits/med/women/40.jpg'}
+[2024-12-21T06:39:39.205+0000] {kafka_streaming.py:59} ERROR - An error occured: HTTPSConnectionPool(host='randomuser.me', port=443): Max retries exceeded with url: /api/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff413870370>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2024-12-21T06:39:44.510+0000] {job.py:213} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/api_internal/internal_api_call.py", line 114, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 308, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-12-21T06:40:07.145+0000] {job.py:221} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-12-21T06:40:07.163+0000] {conn.py:919} INFO - <BrokerConnection node_id=1 host=broker:29092 <connected> [IPv4 ('172.18.0.13', 29092)]>: Closing connection. KafkaConnectionError: Socket EVENT_READ without in-flight-requests
+[2024-12-21T06:40:07.171+0000] {client_async.py:331} WARNING - Node 1 connection failed -- refreshing metadata
+[2024-12-21T06:39:51.064+0000] {conn.py:380} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.13', 29092)]>: connecting to broker:29092 [('172.18.0.13', 29092) IPv4]
+[2024-12-21T06:39:51.067+0000] {conn.py:418} ERROR - Connect attempt to <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.13', 29092)]> returned error 111. Disconnecting.
+[2024-12-21T06:39:51.071+0000] {conn.py:919} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.18.0.13', 29092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2024-12-21T06:39:51.073+0000] {client_async.py:331} WARNING - Node 1 connection failed -- refreshing metadata
+[2024-12-21T06:39:51.677+0000] {logging_mixin.py:188} INFO - {'id': 'c0cc5b7a-3975-4149-b593-9ae6320f5920', 'first_name': 'Valtteri', 'last_name': 'Manni', 'gender': 'male', 'address': '66 Reijolankatu, Kittilä, Lapland, Finland', 'post_code': 31604, 'email': 'valtteri.manni@example.com', 'username': 'goldenduck557', 'dob': '2001-05-14T08:19:43.439Z', 'registered_date': '2011-03-22T22:36:29.732Z', 'phone': '02-821-262', 'picture': 'https://randomuser.me/api/portraits/med/men/24.jpg'}
+[2024-12-21T06:39:52.122+0000] {logging_mixin.py:188} INFO - {'id': '325684d2-02b5-45c7-b5b6-59a4ee3bbb51', 'first_name': 'Vedat', 'last_name': 'Özkara', 'gender': 'male', 'address': '6321 Kushimoto Sk, Ağrı, Hatay, Turkey', 'post_code': 55376, 'email': 'vedat.ozkara@example.com', 'username': 'greenfish617', 'dob': '1995-06-30T12:35:57.709Z', 'registered_date': '2016-08-14T14:41:33.038Z', 'phone': '(254)-005-7693', 'picture': 'https://randomuser.me/api/portraits/med/men/9.jpg'}
+[2024-12-21T06:39:52.492+0000] {logging_mixin.py:188} INFO - {'id': '92dedd75-027b-47ab-b537-de6205681dc2', 'first_name': 'Tracey', 'last_name': 'Little', 'gender': 'female', 'address': '3743 Oaks Cross, City of London, Cheshire, United Kingdom', 'post_code': 'O28 0EP', 'email': 'tracey.little@example.com', 'username': 'lazyladybug988', 'dob': '1991-10-22T10:10:42.823Z', 'registered_date': '2008-08-27T03:31:19.257Z', 'phone': '017687 99878', 'picture': 'https://randomuser.me/api/portraits/med/women/63.jpg'}
+[2024-12-21T06:39:52.865+0000] {logging_mixin.py:188} INFO - {'id': '9f5d4730-926b-460e-ad58-4d852ba4b8fd', 'first_name': 'Mio', 'last_name': 'Poulsen', 'gender': 'male', 'address': '3572 Samvirkeveien, Rjukan, Rogaland, Norway', 'post_code': '7168', 'email': 'mio.poulsen@example.com', 'username': 'angrygorilla257', 'dob': '1986-05-12T09:07:45.328Z', 'registered_date': '2020-05-16T17:23:05.275Z', 'phone': '75475109', 'picture': 'https://randomuser.me/api/portraits/med/men/57.jpg'}
+[2024-12-21T06:39:53.372+0000] {logging_mixin.py:188} INFO - {'id': '977944bf-d519-4bb8-bf5e-3fbd22f64f82', 'first_name': 'Yaëlle', 'last_name': 'Selten', 'gender': 'female', 'address': '5288 Buiten Bantammerstraat, Kudelstaart, Limburg, Netherlands', 'post_code': '2886 SO', 'email': 'yaelle.selten@example.com', 'username': 'goldenpeacock115', 'dob': '1957-04-15T19:35:01.228Z', 'registered_date': '2008-02-25T09:53:36.068Z', 'phone': '(077) 9292540', 'picture': 'https://randomuser.me/api/portraits/med/women/74.jpg'}
+[2024-12-21T06:39:53.743+0000] {logging_mixin.py:188} INFO - {'id': 'b5ee2b94-fff7-44e2-b8a4-a16ca4769b8d', 'first_name': 'Alvaro', 'last_name': 'Lira', 'gender': 'male', 'address': '8797 Peatonal del Río, Venustiano Carranza, Ciudad de Mexico, Mexico', 'post_code': 42840, 'email': 'alvaro.lira@example.com', 'username': 'orangebutterfly332', 'dob': '1961-08-24T23:06:40.279Z', 'registered_date': '2009-10-02T12:58:27.621Z', 'phone': '(682) 436 9945', 'picture': 'https://randomuser.me/api/portraits/med/men/85.jpg'}
+[2024-12-21T06:39:54.131+0000] {logging_mixin.py:188} INFO - {'id': '8b7e2d58-48e1-4cb4-a9a5-b2b104935eb0', 'first_name': 'Arthur', 'last_name': 'Jones', 'gender': 'male', 'address': '2279 New Brighton Road, New Plymouth, Bay of Plenty, New Zealand', 'post_code': 30260, 'email': 'arthur.jones@example.com', 'username': 'sadmeercat673', 'dob': '2001-03-27T05:38:25.076Z', 'registered_date': '2015-04-27T03:35:46.306Z', 'phone': '(725)-346-6914', 'picture': 'https://randomuser.me/api/portraits/med/men/63.jpg'}
+[2024-12-21T06:39:54.520+0000] {logging_mixin.py:188} INFO - {'id': '567ea459-2973-4d1f-9439-0eabe7a6a58a', 'first_name': 'Alicia', 'last_name': 'Anderson', 'gender': 'female', 'address': '5789 Dufferin St, Hampstead, Nunavut, Canada', 'post_code': 'T3E 4B9', 'email': 'alicia.anderson@example.com', 'username': 'whiteswan404', 'dob': '1969-01-08T01:52:33.378Z', 'registered_date': '2002-04-04T23:10:41.593Z', 'phone': 'Z20 E28-4508', 'picture': 'https://randomuser.me/api/portraits/med/women/39.jpg'}
+[2024-12-21T06:39:54.900+0000] {logging_mixin.py:188} INFO - {'id': 'f1d5aef8-e749-4474-8ec8-8b62fbfc9ee4', 'first_name': 'Albert', 'last_name': 'Jensen', 'gender': 'male', 'address': '7037 Nørre Alle, Aaborg Øst, Sjælland, Denmark', 'post_code': 51712, 'email': 'albert.jensen@example.com', 'username': 'whitefrog484', 'dob': '1964-08-13T02:33:31.514Z', 'registered_date': '2007-05-26T08:00:28.927Z', 'phone': '87485143', 'picture': 'https://randomuser.me/api/portraits/med/men/56.jpg'}
+[2024-12-21T06:40:11.549+0000] {conn.py:1527} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-12-21T06:40:11.550+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2024-12-21T06:40:11.722+0000] {logging_mixin.py:188} INFO - {'id': 'a23a3965-043e-4c76-ab04-ad9f337bddf9', 'first_name': 'Line', 'last_name': 'Silva', 'gender': 'female', 'address': '7878 Rua Dezenove de Outubro, Paulo Afonso, Espírito Santo, Brazil', 'post_code': 52277, 'email': 'line.silva@example.com', 'username': 'heavybird495', 'dob': '1972-09-26T11:04:24.779Z', 'registered_date': '2016-08-30T10:20:02.142Z', 'phone': '(81) 2410-0660', 'picture': 'https://randomuser.me/api/portraits/med/women/86.jpg'}
+[2024-12-21T06:40:12.633+0000] {conn.py:1527} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-12-21T06:40:12.634+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2024-12-21T06:39:57.210+0000] {conn.py:1527} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-12-21T06:39:57.211+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2024-12-21T06:40:16.558+0000] {conn.py:1527} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-12-21T06:40:16.558+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2024-12-21T06:40:01.227+0000] {conn.py:1527} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-12-21T06:40:01.228+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2024-12-21T06:40:06.132+0000] {conn.py:1527} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-12-21T06:40:06.133+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2024-12-21T06:40:26.555+0000] {record_accumulator.py:73} WARNING - Produced messages to topic-partition ('users_created', 0) with base offset -1 log start offset None and error None.
+[2024-12-21T06:40:26.556+0000] {record_accumulator.py:332} WARNING - Expired 1 batches in accumulator
+[2024-12-21T06:40:11.143+0000] {conn.py:1527} WARNING - DNS lookup failed for broker:29092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-12-21T06:40:11.144+0000] {conn.py:315} ERROR - DNS lookup failed for broker:29092 (0)
+[2024-12-21T06:40:11.145+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-12-21T06:40:11.155+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=user_automation, task_id=stream_data_from_api, execution_date=20241221T063906, start_date=20241221T063907, end_date=20241221T064011
+[2024-12-21T06:40:11.177+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-12-21T06:40:11.192+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

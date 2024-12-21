@@ -1,0 +1,28 @@
+[2024-12-21T07:04:48.699+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: batch_processing.batch_processing manual__2024-12-21T07:04:47.060784+00:00 [queued]>
+[2024-12-21T07:04:48.708+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: batch_processing.batch_processing manual__2024-12-21T07:04:47.060784+00:00 [queued]>
+[2024-12-21T07:04:48.709+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-12-21T07:04:48.722+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): batch_processing> on 2024-12-21 07:04:47.060784+00:00
+[2024-12-21T07:04:48.728+0000] {standard_task_runner.py:60} INFO - Started process 77 to run task
+[2024-12-21T07:04:48.734+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'batch_processing', 'batch_processing', 'manual__2024-12-21T07:04:47.060784+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/batch_processing.py', '--cfg-path', '/tmp/tmprmh9uv8v']
+[2024-12-21T07:04:48.737+0000] {standard_task_runner.py:88} INFO - Job 43: Subtask batch_processing
+[2024-12-21T07:04:48.789+0000] {task_command.py:423} INFO - Running <TaskInstance: batch_processing.batch_processing manual__2024-12-21T07:04:47.060784+00:00 [running]> on host 15bcaa0a5e90
+[2024-12-21T07:04:48.866+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airscholar' AIRFLOW_CTX_DAG_ID='batch_processing' AIRFLOW_CTX_TASK_ID='batch_processing' AIRFLOW_CTX_EXECUTION_DATE='2024-12-21T07:04:47.060784+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-21T07:04:47.060784+00:00'
+[2024-12-21T07:04:49.004+0000] {batch_processing.py:37} ERROR - Failed to create Spark session
+Traceback (most recent call last):
+  File "/opt/airflow/dags/batch_processing.py", line 25, in create_spark_connection
+    spark = SparkSession.builder \
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2024-12-21T07:04:49.009+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-12-21T07:04:49.021+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=batch_processing, task_id=batch_processing, execution_date=20241221T070447, start_date=20241221T070448, end_date=20241221T070449
+[2024-12-21T07:04:49.066+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-12-21T07:04:49.080+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
